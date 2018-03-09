@@ -1,0 +1,19 @@
+<div>
+  <mat-toolbar class="mat-elevation-z4" color="primary">
+    <mat-toolbar-row>
+      <span class="toolbar_center">CLASSIC GAMES</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <div class="toolbar_center">
+        <button mat-button routerLink="/ps1games">
+          <img src="../assets/img/playstation_logo_colour.svg" height="50px"/>
+        </button>
+        <button mat-button routerLink="/nesgames">
+          <img src="../assets/img/nes-controller.svg" height="50px"/>
+        </button>
+        <button mat-button class="quiz_button" routerLink="/quiz">QUIZ</button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,11 @@
+.nes-games-container {
+  background-color: mediumaquamarine;
+  width: 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.nes-image-style {
+  margin-bottom: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+h1 {
+  font-family: 'Creepster';
+}
+
+.jumbotron {
+  background-color: mediumaquamarine;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+form.quiz-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+div.form-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.form-group {
+  padding-left: 30px;
+}

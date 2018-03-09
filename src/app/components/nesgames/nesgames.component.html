@@ -1,0 +1,11 @@
+<div style="background-color: darkred">
+  <div class="mat-elevation-z6 nes-games-container">
+    <mat-grid-list [cols]="4" rowHeight="200px">
+      <mat-grid-tile *ngFor="let nesgame of nesGames">
+        <a href="https://jsnes.fir.sh/run/{{nesgame.playrom}}" target="_blank">
+          <img matTooltip="{{nesgame.title}}" class="nes-image-style mat-elevation-z4" src="../../../assets/img/nintendo/{{nesgame.boxart}}" width="142px" height="200px"/>
+        </a>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

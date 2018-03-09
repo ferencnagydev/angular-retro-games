@@ -1,0 +1,10 @@
+.game-screenshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  text-align: justify;
+  padding-top: 20px;
+}

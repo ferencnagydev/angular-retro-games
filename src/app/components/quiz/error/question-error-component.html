@@ -1,0 +1,11 @@
+<div *ngIf="displayError" >
+  <span class="glyphicon glyphicon-remove form-control-feedback icon-placement"></span>
+  <span class="sr-only">(error)</span>
+  <div class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>
+
+<div *ngIf="displayCorrect" >
+  <span class="glyphicon glyphicon-ok form-control-feedback icon-placement"></span>
+</div>

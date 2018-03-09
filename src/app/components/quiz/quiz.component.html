@@ -1,0 +1,92 @@
+<div style="background-color: darkred">
+  <form class="quiz-form" [formGroup]="quizForm">
+    <div class="jumbotron mat-elevation-z6">
+
+      <div class="form-title">
+        <h1>Test your wisdom</h1>
+      </div>
+
+      <div class="form-group radio" [ngClass]="showQuestionValidity('question1')">
+        <h3>How many possible endings are in the first Silent Hill?</h3>
+        <label><input type="radio" formControlName="question1" value="a">One</label><br/>
+        <label><input type="radio" formControlName="question1" value="b">Three</label><br/>
+        <label><input type="radio" formControlName="question1" value="c">Five</label><br/>
+        <label><input type="radio" formControlName="question1" value="d">Seven</label><br/>
+        <app-question-error-component
+          [displayCorrect]="isCorrectAnswerSelected('question1')"
+          [displayError]="isWrongAnswerSelected('question1')"
+          errorMessage="The first Silent Hill game has five different endings, depending on actions taken by the player: Good+, Good, Bad, Bad+, UFO (joke ending)">
+        </app-question-error-component>
+      </div>
+
+      <div class="form-group radio" [ngClass]="showQuestionValidity('question2')">
+        <h3>Who is Squall Leonhart's love interest in Final Fantasy VIII?</h3>
+        <label><input type="radio" formControlName="question2" value="a">Rinoa Heartilly</label><br/>
+        <label><input type="radio" formControlName="question2" value="b">Siren</label><br/>
+        <label><input type="radio" formControlName="question2" value="c">Quistis Trepe</label><br/>
+        <label><input type="radio" formControlName="question2" value="d">Selphie Tilmitt</label><br/>
+        <app-question-error-component
+          [displayCorrect]="isCorrectAnswerSelected('question2')"
+          [displayError]="isWrongAnswerSelected('question2')"
+          errorMessage="Squall develops a romance with one of his comrades throughout the game: Rinoa Heartilly.">
+        </app-question-error-component>
+      </div>
+
+      <div class="form-group radio" [ngClass]="showQuestionValidity('question3')">
+        <h3>How many playable fighters are in Tekken 3?</h3>
+        <label><input type="radio" formControlName="question3" value="a">6</label><br/>
+        <label><input type="radio" formControlName="question3" value="b">14</label><br/>
+        <label><input type="radio" formControlName="question3" value="c">25</label><br/>
+        <label><input type="radio" formControlName="question3" value="d">23</label><br/>
+        <app-question-error-component
+          [displayCorrect]="isCorrectAnswerSelected('question3')"
+          [displayError]="isWrongAnswerSelected('question3')"
+          errorMessage="Tekken 3 features a largely new cast of characters, with a total of 23 characters.">
+        </app-question-error-component>
+      </div>
+
+      <div class="form-group radio" [ngClass]="showQuestionValidity('question4')">
+        <h3>Who is the leader of FOXHOUND in Metal Gear Solid?</h3>
+        <label><input type="radio" formControlName="question4" value="a">Solid Snake</label><br/>
+        <label><input type="radio" formControlName="question4" value="b">Liquid Snake</label><br/>
+        <label><input type="radio" formControlName="question4" value="c">Sniper Wolf</label><br/>
+        <label><input type="radio" formControlName="question4" value="d">Psycho Mantis</label><br/>
+        <app-question-error-component
+          [displayCorrect]="isCorrectAnswerSelected('question4')"
+          [displayError]="isWrongAnswerSelected('question4')"
+          errorMessage="Liquid Snake leads FOXHOUND into a renegade organization and threatens the world with a nuclear warhead-equipped walking battle tank: Metal Gear REX.">
+        </app-question-error-component>
+      </div>
+
+      <div class="form-group radio" [ngClass]="showQuestionValidity('question5')">
+        <h3>How can you gain an extra life in Crash Bandicoot?</h3>
+        <label><input type="radio" formControlName="question5" value="a">Collect Aku Aku masks</label><br/>
+        <label><input type="radio" formControlName="question5" value="b">Collect life cards</label><br/>
+        <label><input type="radio" formControlName="question5" value="c">Collect Wampa fruits</label><br/>
+        <label><input type="radio" formControlName="question5" value="d">Hit a bonus level</label><br/>
+        <app-question-error-component
+          [displayCorrect]="isCorrectAnswerSelected('question5')"
+          [displayError]="isWrongAnswerSelected('question5')"
+          errorMessage="By collecting 100 Wampa fruits, you can gain an extra life.">
+        </app-question-error-component>
+      </div>
+
+      <div class="form-group radio" [ngClass]="showQuestionValidity('question6')">
+        <h3>How long was the development cycle for Resident Evil 2?</h3>
+        <label><input type="radio" formControlName="question6" value="a">About half a year</label><br/>
+        <label><input type="radio" formControlName="question6" value="b">About three years</label><br/>
+        <label><input type="radio" formControlName="question6" value="c">About five years</label><br/>
+        <label><input type="radio" formControlName="question6" value="d">About two years</label><br/>
+        <app-question-error-component
+          [displayCorrect]="isCorrectAnswerSelected('question6')"
+          [displayError]="isWrongAnswerSelected('question6')"
+          errorMessage="The initial version, Resident Evil 1.5 was cancelled when it was around 70% complete and the whole game was re-developed by a team of 40-50 over 21 months.">
+        </app-question-error-component>
+      </div>
+
+      <app-quiz-button id="submitButton" [buttonType]="'submit'" (click)="submitQuiz()">VIEW YOUR DESTINY</app-quiz-button>
+      <app-quiz-button id="tryAgainButton" (click)="resetQuiz()">TRY AGAIN</app-quiz-button>
+
+    </div>
+  </form>
+</div>

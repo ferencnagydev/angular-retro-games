@@ -1,0 +1,9 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html {
+  background-color: goldenrod;
+}
+
+.game-detail-dialog-style .mat-dialog-container {
+  background-color: burlywood;
+}

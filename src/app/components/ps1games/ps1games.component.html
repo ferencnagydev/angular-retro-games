@@ -1,0 +1,9 @@
+<div style="background-color: darkred">
+  <div class="mat-elevation-z6 ps1-games-container">
+    <mat-grid-list [cols]="2" rowHeight="200px">
+      <mat-grid-tile *ngFor="let ps1game of ps1games">
+          <img class="image-hover-cursor" src="../../../assets/img/ps1/{{ps1game.boxart}}" width="200px" height="200px" (click)="showGameDetails(ps1game)"/>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

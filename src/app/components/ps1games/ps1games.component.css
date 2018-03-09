@@ -1,0 +1,10 @@
+.ps1-games-container {
+  background-color: mediumaquamarine;
+  width: 450px;
+  margin: auto;
+  padding: 10px;
+}
+
+.image-hover-cursor {
+  cursor: help;
+}

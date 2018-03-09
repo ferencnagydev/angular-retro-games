@@ -1,0 +1,10 @@
+.toolbar_center {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Bungee';
+}
+
+.quiz_button {
+  font-family: 'Bungee';
+}
