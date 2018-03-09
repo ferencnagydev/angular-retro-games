@@ -19,17 +19,8 @@ import { NesGamesComponent } from './components/nesgames/nesgames.component';
 const Routing: ModuleWithProviders = RouterModule.forRoot([
   {
     path: '',
-    component: Ps1GamesComponent
-  },
-  {
-    path: 'ps1games',
     pathMatch: 'full',
-    redirectTo: ''
-  },
-  {
-    path: 'nesgames',
-    pathMatch: 'full',
-    component: NesGamesComponent
+    redirectTo: 'ps1games'
   },
   {
     path: 'quiz',

@@ -9,27 +9,13 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 })
 export class GameDetailComponent implements OnInit {
 
-  boxart: string;
-  description: string;
-  developer: string;
-  homepage: string;
-  releaseYear: string;
-  screenshot: string;
-  title: string;
-  trailer: string;
+  ps1Game: Ps1Game;
 
   constructor(private dialogReference: MatDialogRef<GameDetailComponent>,
               @Inject(MAT_DIALOG_DATA) private game: Ps1Game) { }
 
   ngOnInit() {
-    this.boxart = this.game.boxart;
-    this.description = this.game.description;
-    this.developer = this.game.developer;
-    this.homepage = this.game.homepage;
-    this.releaseYear = this.game.releaseYear;
-    this.screenshot = this.game.screenshot;
-    this.title = this.game.name;
-    this.trailer = this.game.trailer;
+    this.ps1Game = this.game;
   }
 
   close(): void {

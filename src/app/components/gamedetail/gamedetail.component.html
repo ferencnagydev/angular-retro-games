@@ -1,20 +1,20 @@
 <mat-card style="max-width: 500px; background: beige">
   <mat-card-header>
-    <img mat-card-avatar src="../../../assets/img/ps1/{{boxart}}">
-    <mat-card-title>{{title}}</mat-card-title>
-    <mat-card-subtitle>{{developer}}, {{releaseYear}}</mat-card-subtitle>
+    <img mat-card-avatar src="../../../assets/img/ps1/{{ps1Game.boxart}}">
+    <mat-card-title>{{ps1Game.name}}</mat-card-title>
+    <mat-card-subtitle>{{ps1Game.developer}}, {{ps1Game.releaseYear}}</mat-card-subtitle>
     <div style="margin-left: auto; margin-right: 0">
-      <a style="outline: none" href="http://www.youtube.com/watch?v={{trailer}}" target="_blank">
+      <a style="outline: none" href="http://www.youtube.com/watch?v={{ps1Game.trailer}}" target="_blank">
         <mat-icon matTooltip="Watch the game trailer!">movie</mat-icon>
       </a>
     </div>
   </mat-card-header>
   <mat-card-content>
-    <img class="game-screenshot" src="../../../assets/img/ps1/{{screenshot}}" height="300px"/>
-    <p>{{description}}</p>
+    <img class="game-screenshot" src="../../../assets/img/ps1/{{ps1Game.screenshot}}" height="300px"/>
+    <p>{{ps1Game.description}}</p>
   </mat-card-content>
   <mat-card-actions align="end">
-    <a href="{{homepage}}" target="_blank">
+    <a href="{{ps1Game.homepage}}" target="_blank">
       <button mat-button type="button">MORE INFORMATION</button>
     </a>
     <button mat-button type="button" (click)="close()">OK, THANKS</button>

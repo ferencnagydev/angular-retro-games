@@ -12,7 +12,7 @@ import { NesGamesComponent } from '../../components/nesgames/nesgames.component'
 
 const Routing: ModuleWithProviders = RouterModule.forChild([
   {
-    path: '',
+    path: 'ps1games',
     component: Ps1GamesComponent,
     resolve: {
       ps1games: Ps1GamesResolver
