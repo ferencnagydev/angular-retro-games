@@ -15,9 +15,6 @@ export class QuizComponent implements OnInit {
   }
 
   ngOnInit() {
-    document.getElementById('submitButton').style.display = 'initial';
-    document.getElementById('tryAgainButton').style.display = 'none';
-
     this.quizForm = this.formBuilder.group({
       question1: new FormControl('', {
         validators: [
@@ -82,8 +79,6 @@ export class QuizComponent implements OnInit {
 
   submitQuiz() {
     this.isSubmitted = true;
-    document.getElementById('submitButton').style.display = 'none';
-    document.getElementById('tryAgainButton').style.display = 'initial';
     Object.keys(this.quizForm.controls).forEach(field => {
       const control = this.quizForm.get(field);
       control.markAsTouched({ onlySelf: true });
@@ -92,8 +87,6 @@ export class QuizComponent implements OnInit {
 
   resetQuiz() {
     this.isSubmitted = false;
-    document.getElementById('submitButton').style.display = 'initial';
-    document.getElementById('tryAgainButton').style.display = 'none';
     this.quizForm.reset();
   }
 }

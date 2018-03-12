@@ -84,8 +84,8 @@
         </app-question-error-component>
       </div>
 
-      <app-quiz-button id="submitButton" [buttonType]="'submit'" (click)="submitQuiz()">VIEW YOUR DESTINY</app-quiz-button>
-      <app-quiz-button id="tryAgainButton" (click)="resetQuiz()">TRY AGAIN</app-quiz-button>
+      <app-quiz-button id="submitButton" [buttonType]="'submit'" [hidden]="isSubmitted" (click)="submitQuiz()">VIEW YOUR DESTINY</app-quiz-button>
+      <app-quiz-button id="tryAgainButton" [hidden]="!isSubmitted" (click)="resetQuiz()">TRY AGAIN</app-quiz-button>
 
     </div>
   </form>
